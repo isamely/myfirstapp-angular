@@ -1,0 +1,44 @@
+<h3>Mostrando datos usando otros componentes</h3>
+<ul class="user-li" > 
+  <!--mostramos los datos que tenemos en un componente a parte-->
+    <app-user *ngFor="let user of users"[nameUser]="user"></app-user> 
+</ul>  
+  <hr>
+  <h3>Usando condicional IF</h3>
+  <p class="activado" *ngIf="active" >
+    activado!
+  </p>
+  <!-- 
+    ngFor: se le da como valor el arreglo que vamos a recorrer 
+
+    ngIf: sirve para ver si tenemos una validación
+    -->
+<hr>
+<h3>Mostrando datos con TypeScript</h3>
+<div>
+  <p>Nombre: {{name}} | <span>Edad: {{age}}  </span></p>
+  <p>Dirección: {{adress.street}}</p>
+  <p>Ciudad: {{adress.city}}</p>
+  <p>Y le gusta hacer:</p>
+  <ul>
+    <li *ngFor="let hobby of hobbies">
+       {{hobby}}
+    </li>
+  </ul>
+</div>
+
+<hr>
+<h3>Eventos con botones - miembros</h3>
+<!--Eventos con botones-->
+<ul class="miembros">
+  <li *ngFor="let miembro of miembros" >
+    {{miembro}} 
+    <button (click)="sayHello()" >
+        Click me!
+      </button>
+      <button (click)="borrar(miembro)" >
+          Borrar
+        </button>
+  </li>
+</ul>
+

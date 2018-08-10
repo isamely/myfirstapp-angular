@@ -1,0 +1,23 @@
+.user-li {
+    background: linear-gradient(35deg, #ccffff, #ffcccc);
+}
+
+.activado {
+    border-radius: 85px;
+    text-align: center;
+    font-size: 2em;
+    background: linear-gradient(90deg, #ff0000, #ccffff)
+}
+
+h3 {
+    color: #ca1e60;
+    text-align: center;
+
+}
+
+.miembros li {
+    margin-bottom:2%;
+}
+button {
+    margin-right: 15px;
+}
